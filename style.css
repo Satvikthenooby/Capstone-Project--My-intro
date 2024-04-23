@@ -1,0 +1,308 @@
+.topcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 90vh;
+  background-color: rgba(242, 175, 184, 255);
+  /* border-radius: 10%; */
+  text-align: center;
+}
+.topcontainer img {
+  border-radius: 10%;
+  width: 150px;
+  border: 2px solid black;
+}
+.profile {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 22vh 1vh;
+}
+.profile h1 {
+  font-size: 5rem;
+  font-family: "Sacramento", cursive;
+  color: brown;
+}
+.profile h2 {
+  font-size: 2.5rem;
+  font-family: "Sacramento", cursive;
+  color: brown;
+}
+.middlecontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vh;
+
+  padding-bottom: 2vh;
+}
+.intro {
+  text-align: center;
+  display: grid;
+
+  flex-direction: column;
+  grid-template-columns: 1fr;
+  grid-template-rows: 22vh 1vh;
+  justify-items: center;
+  height: 30vh;
+  padding-bottom: 3vh;
+}
+.intro h1 {
+  color: rgb(6, 60, 255);
+
+  font-size: 6vw;
+
+  font-family: "Montserrat", sans-serif;
+}
+.intro p {
+  color: rgb(0, 0, 0);
+
+  font-size: 2vw;
+  font-family: "Open Sans", sans-serif;
+  text-wrap: wrap;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 50px;
+  width: 70%;
+  border: 2px solid black;
+  background-color: rgb(6, 6, 6);
+  padding-bottom: 10px;
+  border-radius: 5%;
+}
+.skills h1 {
+  font-size: 7vw;
+  color: rgb(6, 60, 255);
+  text-decoration: underline;
+  font-family: "Montserrat", sans-serif;
+}
+.skills img {
+  width: 20vw;
+}
+.skill_custom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.skill_custom p {
+  text-align: left;
+  font-size: 1.3rem;
+  text-align: left;
+  text-wrap: wrap;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 50px;
+  width: 70%;
+  border: 2px solid black;
+  background-color: rgb(0, 0, 0);
+  padding-bottom: 10px;
+  border-radius: 5%;
+}
+.projects h1 {
+  font-size: 7vw;
+  color: rgb(6, 60, 255);
+  text-decoration: underline;
+  font-family: "Montserrat", sans-serif;
+}
+.projects_custom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.projects img {
+  width: 20vw;
+}
+.projects_custom p {
+  text-align: left;
+  font-size: 1.3rem;
+  text-align: left;
+  text-wrap: wrap;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+}
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient {
+  background: linear-gradient(
+    45deg,
+    rgba(63, 162, 205, 0.5) 0%,
+    rgba(63, 162, 205, 1) 50%,
+    rgba(63, 162, 205, 0.5) 100%
+  );
+  background-size: 200% 200%;
+  animation: gradientAnimation 5s infinite;
+}
+.bottomContainer {
+  /* width: 100%; */
+  height: 300px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70px 90px 60px;
+  justify-items: center;
+}
+.bottomContainer h2 {
+  font-size: 35px;
+  text-align: center;
+  color: rgb(6, 60, 255);
+
+  font-family: "Montserrat", sans-serif;
+}
+.bottomContainer p {
+  width: 50%;
+  text-align: center;
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(0, 0, 0);
+}
+.bottomContainer ul {
+  display: flex;
+
+  gap: 10px;
+  list-style-type: none;
+}
+
+@keyframes backgroundColorAnimation {
+  0% {
+    background-color: rgba(242, 175, 184, 0.5);
+  }
+  50% {
+    background-color: rgba(242, 175, 184, 1);
+  }
+  100% {
+    background-color: rgba(242, 175, 184, 0.5);
+  }
+}
+
+.gradienttop {
+  background-color: rgba(242, 175, 184, 1); /* Initial solid background color */
+  animation: backgroundColorAnimation 5s infinite;
+}
+@media (max-width: 700px) {
+  .topcontainer {
+    height: 50vh;
+  }
+  .profile {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 11vh 1vh;
+  }
+  .topcontainer img {
+    width: 100px;
+  }
+  .profile h1 {
+    font-size: 3rem;
+  }
+  .profile h2 {
+    font-size: 1.5rem;
+  }
+
+  .intro {
+    grid-template-rows: 8vh 1vh;
+
+    height: 18vh;
+  }
+  .intro h1 {
+    font-size: 4vw;
+  }
+  .intro p {
+    font-size: 3vw;
+    width: 70vw;
+  }
+
+  .skills {
+    width: 100%;
+
+    padding-bottom: 10px;
+    border-radius: 2%;
+  }
+  .skills h1 {
+    font-size: 7vw;
+  }
+  .skills img {
+    width: 30vw;
+  }
+  
+  .skill_custom p {
+    text-align: left;
+    font-size: 1rem;
+    text-align: left;
+    text-wrap: wrap;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+  }
+
+  .projects {
+    width: 100%;
+
+    padding-bottom: 10px;
+    border-radius: 2%;
+  }
+  .projects h1 {
+    font-size: 7vw;
+  }
+  .projects img {
+    width: 30vw;
+  }
+  
+  .projects_custom p {
+    text-align: left;
+    font-size: 1rem;
+    text-align: left;
+    text-wrap: wrap;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+  }
+
+  .bottomContainer {
+    /* width: 100%; */
+    height: 20vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 7vh 6vh 4vh;
+    justify-items: center;
+  }
+  .bottomContainer h2 {
+    font-size: 6vw;
+    text-align: center;
+    color: rgb(6, 60, 255);
+  
+    font-family: "Montserrat", sans-serif;
+  }
+  .bottomContainer p {
+    width: 100%;
+    text-align: center;
+    font-size: 3vw;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(0, 0, 0);
+  }
+  .bottomContainer ul {
+    display: flex;
+    position: relative;
+    right: 5vw;
+    gap: 10vw;
+    list-style-type: none;
+  }
+  
+}
